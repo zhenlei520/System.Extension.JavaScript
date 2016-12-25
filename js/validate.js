@@ -5,7 +5,7 @@
 window.onload=pageLoad();
 
 
-(function(window,document,undefined){
+(function(window,document){
     var regexConfig={
         /**
          * 数字正则表达式
