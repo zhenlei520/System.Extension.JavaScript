@@ -1,5 +1,6 @@
 /**
  * Created by zhenlei on 2016/12/25.
+ * 限制文本框输入
  */
 (function(window,document){
     /**

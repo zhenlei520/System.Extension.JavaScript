@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b0cc910-377b-4c0b-8e4d-e1f4d23c88d0" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="0b0cc910-377b-4c0b-8e4d-e1f4d23c88d0" name="默认的" comment="js工具类&#10;&#10;不依赖任何js库，信息验证工具库&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/date.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/validate.input.js" afterPath="$PROJECT_DIR$/js/validate.input.js" />
     </list>
     <ignored path="Html.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -13,16 +16,48 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
+    <option name="PATCH_PATH" value="D:\Study\Product\Owner\GitHub\JavaScript\System.Extension.JavaScript" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="Html" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="validate.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/validate.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="date.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/date.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="314">
+              <caret line="108" column="4" lean-forward="false" selection-start-line="108" selection-start-column="4" selection-end-line="108" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="date.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../../../源代码/前端js库/时间格式化/date.js-master/date.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="76" column="29" lean-forward="false" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -31,8 +66,22 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>halfamonth</find>
+      <find>_year</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="zhenlei" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -40,17 +89,23 @@
         <option value="$PROJECT_DIR$/te.js" />
         <option value="$PROJECT_DIR$/s.js" />
         <option value="$PROJECT_DIR$/js/base.js" />
-        <option value="$USER_HOME$/Desktop/test/1.html" />
         <option value="$USER_HOME$/Desktop/test/validate.input.js" />
-        <option value="$PROJECT_DIR$/js/validate.input.js" />
+        <option value="$USER_HOME$/Desktop/test/1.js" />
+        <option value="$USER_HOME$/Desktop/test/1.html" />
+        <option value="$USER_HOME$/Desktop/test/localstorage.js" />
+        <option value="$PROJECT_DIR$/js/cookie.js" />
+        <option value="$PROJECT_DIR$/js/localstorage.js" />
         <option value="$PROJECT_DIR$/js/validate.js" />
+        <option value="$PROJECT_DIR$/js/validate.input.js" />
+        <option value="$PROJECT_DIR$/js/date.js" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" />
-  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-11" />
@@ -59,20 +114,7 @@
     <option name="height" value="1042" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <OptionsSetting value="true" id="添加" />
-    <OptionsSetting value="true" id="移除" />
-    <OptionsSetting value="true" id="签出" />
-    <OptionsSetting value="true" id="更新" />
-    <OptionsSetting value="true" id="状态" />
-    <OptionsSetting value="true" id="编辑" />
-    <ConfirmationsSetting value="0" id="添加" />
-    <ConfirmationsSetting value="0" id="移除" />
+    <ConfirmationsSetting value="2" id="添加" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -89,6 +131,35 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="System.Extension.JavaScript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="System.Extension.JavaScript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="System.Extension.JavaScript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="System.Extension.JavaScript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -103,38 +174,18 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="System.Extension.JavaScript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="System.Extension.JavaScript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="System.Extension.JavaScript" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Study\Product\Owner\GitHub\JavaScript\System.Extension.JavaScript\js" />
       <recent name="D:\Study\Product\Owner\Practice\Html\js" />
     </key>
   </component>
@@ -145,14 +196,22 @@
     <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
       <method />
     </configuration>
     <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
@@ -162,6 +221,7 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
@@ -170,12 +230,14 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
+      <command value="run" />
       <scripts />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
     <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter />
       <node-options />
       <working-directory>$PROJECT_DIR$</working-directory>
       <pass-parent-env>true</pass-parent-env>
@@ -188,7 +250,9 @@
       <method />
     </configuration>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -197,9 +261,43 @@
       <changelist id="0b0cc910-377b-4c0b-8e4d-e1f4d23c88d0" name="默认的" comment="" />
       <created>1482564975173</created>
       <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
       <updated>1482564975173</updated>
+      <workItem from="1482679252669" duration="1485000" />
     </task>
+    <task id="LOCAL-00001" summary="js工具类&#10;&#10;不依赖任何js库，信息验证工具库&#10;">
+      <created>1482653259297</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1482653259297</updated>
+    </task>
+    <task id="LOCAL-00002" summary="js工具类&#10;&#10;不依赖任何js库，信息验证工具库&#10;">
+      <created>1482653352779</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1482653352779</updated>
+    </task>
+    <task id="LOCAL-00003" summary="js工具类&#10;&#10;不依赖任何js库，信息验证工具库&#10;">
+      <created>1482680489330</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1482680489330</updated>
+    </task>
+    <task id="LOCAL-00004" summary="js工具类&#10;&#10;不依赖任何js库，信息验证工具库&#10;">
+      <created>1482680570321</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1482680570321</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1485000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -212,28 +310,33 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="49" width="1942" height="1042" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17883597" sideWeight="0.48681897" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17708333" sideWeight="0.47368422" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982457" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973544" sideWeight="0.4938918" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33137485" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32902467" sideWeight="0.5021164" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="消息" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3284091" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973544" sideWeight="0.48681897" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33137485" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17883597" sideWeight="0.51318103" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17883597" sideWeight="0.5263158" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33019978" sideWeight="0.4978836" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -246,230 +349,159 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="js工具类&#10;&#10;不依赖任何js库，信息验证工具库&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="js工具类&#10;&#10;不依赖任何js库，信息验证工具库&#10;" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/base.js">
+    <entry file="file://$PROJECT_DIR$/js/validate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="189">
+          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/date.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/validate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="295" column="26" selection-start-line="295" selection-start-column="26" selection-end-line="295" selection-end-column="26" />
-          <folding>
-            <element signature="e#142#176#0" expanded="false" />
-            <element signature="e#214#249#0" expanded="false" />
-            <element signature="e#364#398#0" expanded="false" />
-            <element signature="e#562#596#0" expanded="false" />
-            <element signature="e#651#686#0" expanded="false" />
-            <element signature="e#736#796#0" expanded="false" />
-            <element signature="e#919#954#0" expanded="false" />
-            <element signature="e#1066#1101#0" expanded="false" />
-            <element signature="e#1221#1314#0" expanded="false" />
-            <element signature="e#1362#1525#0" expanded="false" />
-            <element signature="e#1420#1464#0" expanded="false" />
-            <element signature="e#1535#1628#0" expanded="false" />
-            <element signature="e#1665#1797#0" expanded="false" />
-            <element signature="e#1807#1863#0" expanded="false" />
-            <element signature="e#1902#2036#0" expanded="false" />
-            <element signature="e#2046#2139#0" expanded="false" />
-            <element signature="e#2181#2315#0" expanded="false" />
-            <element signature="e#2325#2388#0" expanded="false" />
-            <element signature="e#2429#2565#0" expanded="false" />
-            <element signature="e#2575#2669#0" expanded="false" />
-            <element signature="e#2710#2843#0" expanded="false" />
-            <element signature="e#2853#2924#0" expanded="false" />
-            <element signature="e#2968#8652#0" expanded="false" />
-            <element signature="e#4742#4813#0" expanded="false" />
-            <element signature="e#4851#6120#0" expanded="false" />
-            <element signature="e#6134#6329#0" expanded="false" />
-            <element signature="e#8662#8725#0" expanded="false" />
-            <element signature="e#8761#8892#0" expanded="false" />
-            <element signature="e#8902#8966#0" expanded="false" />
-            <element signature="e#9003#9135#0" expanded="false" />
-            <element signature="e#9145#9212#0" expanded="false" />
-            <element signature="e#9253#9388#0" expanded="false" />
-            <element signature="e#9398#9432#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/base.js">
+    <entry file="file://$PROJECT_DIR$/js/date.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/validate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="295" column="26" selection-start-line="295" selection-start-column="26" selection-end-line="295" selection-end-column="26" />
-          <folding>
-            <element signature="e#142#176#0" expanded="false" />
-            <element signature="e#214#249#0" expanded="false" />
-            <element signature="e#364#398#0" expanded="false" />
-            <element signature="e#562#596#0" expanded="false" />
-            <element signature="e#651#686#0" expanded="false" />
-            <element signature="e#736#796#0" expanded="false" />
-            <element signature="e#919#954#0" expanded="false" />
-            <element signature="e#1066#1101#0" expanded="false" />
-            <element signature="e#1221#1314#0" expanded="false" />
-            <element signature="e#1362#1525#0" expanded="false" />
-            <element signature="e#1420#1464#0" expanded="false" />
-            <element signature="e#1535#1628#0" expanded="false" />
-            <element signature="e#1665#1797#0" expanded="false" />
-            <element signature="e#1807#1863#0" expanded="false" />
-            <element signature="e#1902#2036#0" expanded="false" />
-            <element signature="e#2046#2139#0" expanded="false" />
-            <element signature="e#2181#2315#0" expanded="false" />
-            <element signature="e#2325#2388#0" expanded="false" />
-            <element signature="e#2429#2565#0" expanded="false" />
-            <element signature="e#2575#2669#0" expanded="false" />
-            <element signature="e#2710#2843#0" expanded="false" />
-            <element signature="e#2853#2924#0" expanded="false" />
-            <element signature="e#2968#8652#0" expanded="false" />
-            <element signature="e#4742#4813#0" expanded="false" />
-            <element signature="e#4851#6120#0" expanded="false" />
-            <element signature="e#6134#6329#0" expanded="false" />
-            <element signature="e#8662#8725#0" expanded="false" />
-            <element signature="e#8761#8892#0" expanded="false" />
-            <element signature="e#8902#8966#0" expanded="false" />
-            <element signature="e#9003#9135#0" expanded="false" />
-            <element signature="e#9145#9212#0" expanded="false" />
-            <element signature="e#9253#9388#0" expanded="false" />
-            <element signature="e#9398#9432#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="12" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="12" />
+        <state relative-caret-position="0">
+          <caret line="295" column="26" lean-forward="false" selection-start-line="295" selection-start-column="26" selection-end-line="295" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/validate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#142#176#0" expanded="false" />
-            <element signature="e#214#249#0" expanded="false" />
-            <element signature="e#364#398#0" expanded="false" />
-            <element signature="e#562#596#0" expanded="false" />
-            <element signature="e#651#686#0" expanded="false" />
-            <element signature="e#736#796#0" expanded="false" />
-            <element signature="e#919#954#0" expanded="false" />
-            <element signature="e#1066#1101#0" expanded="false" />
-            <element signature="e#1221#1314#0" expanded="false" />
-            <element signature="e#1362#1525#0" expanded="false" />
-            <element signature="e#1420#1464#0" expanded="false" />
-            <element signature="e#1535#1628#0" expanded="false" />
-            <element signature="e#1665#1797#0" expanded="false" />
-            <element signature="e#1807#1863#0" expanded="false" />
-            <element signature="e#1902#2036#0" expanded="false" />
-            <element signature="e#2046#2139#0" expanded="false" />
-            <element signature="e#2181#2315#0" expanded="false" />
-            <element signature="e#2325#2388#0" expanded="false" />
-            <element signature="e#2429#2565#0" expanded="false" />
-            <element signature="e#2575#2669#0" expanded="false" />
-            <element signature="e#2710#2843#0" expanded="false" />
-            <element signature="e#2853#2924#0" expanded="false" />
-            <element signature="e#2968#8652#0" expanded="false" />
-            <element signature="e#4742#4813#0" expanded="false" />
-            <element signature="e#4851#6120#0" expanded="false" />
-            <element signature="e#6134#6329#0" expanded="false" />
-            <element signature="e#8662#8725#0" expanded="false" />
-            <element signature="e#8761#8892#0" expanded="false" />
-            <element signature="e#8902#8966#0" expanded="false" />
-            <element signature="e#9003#9135#0" expanded="false" />
-            <element signature="e#9145#9212#0" expanded="false" />
-            <element signature="e#9253#9388#0" expanded="false" />
-            <element signature="e#9398#9432#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="295" column="26" lean-forward="false" selection-start-line="295" selection-start-column="26" selection-end-line="295" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/test/1.html">
+    <entry file="file://$PROJECT_DIR$/js/validate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.75">
-          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/test/validate.input.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.4473686">
-          <caret line="101" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="168" selection-end-column="20" />
+        <state relative-caret-position="0">
+          <caret line="101" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="168" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Software/工具/浏览器/store.js-master/store.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Software/工具/浏览器/store.js-master/src/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/test/1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="3" column="6" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/test/localstorage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="37" column="17" lean-forward="false" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/cookie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="7" column="15" lean-forward="false" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/localstorage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/test/1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/validate.input.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16646115">
-          <caret line="118" column="35" selection-start-line="118" selection-start-column="35" selection-end-line="118" selection-end-column="35" />
+        <state relative-caret-position="0">
+          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../../源代码/前端js库/时间格式化/date.js-master/date.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="76" column="29" lean-forward="false" selection-start-line="76" selection-start-column="29" selection-end-line="76" selection-end-column="29" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/validate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.050373133">
-          <caret line="295" column="26" selection-start-line="295" selection-start-column="26" selection-end-line="295" selection-end-column="26" />
-          <folding>
-            <element signature="e#142#176#0" expanded="false" />
-            <element signature="e#214#249#0" expanded="false" />
-            <element signature="e#364#398#0" expanded="false" />
-            <element signature="e#562#596#0" expanded="false" />
-            <element signature="e#651#686#0" expanded="false" />
-            <element signature="e#736#796#0" expanded="false" />
-            <element signature="e#919#954#0" expanded="false" />
-            <element signature="e#1066#1101#0" expanded="false" />
-            <element signature="e#1221#1314#0" expanded="false" />
-            <element signature="e#1362#1525#0" expanded="false" />
-            <element signature="e#1420#1464#0" expanded="false" />
-            <element signature="e#1535#1628#0" expanded="false" />
-            <element signature="e#1665#1797#0" expanded="false" />
-            <element signature="e#1807#1863#0" expanded="false" />
-            <element signature="e#1902#2036#0" expanded="false" />
-            <element signature="e#2046#2139#0" expanded="false" />
-            <element signature="e#2181#2315#0" expanded="false" />
-            <element signature="e#2325#2388#0" expanded="false" />
-            <element signature="e#2429#2565#0" expanded="false" />
-            <element signature="e#2575#2669#0" expanded="false" />
-            <element signature="e#2710#2843#0" expanded="false" />
-            <element signature="e#2853#2924#0" expanded="false" />
-            <element signature="e#2968#8652#0" expanded="false" />
-            <element signature="e#4742#4813#0" expanded="false" />
-            <element signature="e#4851#6120#0" expanded="false" />
-            <element signature="e#6134#6329#0" expanded="false" />
-            <element signature="e#8662#8725#0" expanded="false" />
-            <element signature="e#8761#8892#0" expanded="false" />
-            <element signature="e#8902#8966#0" expanded="false" />
-            <element signature="e#9003#9135#0" expanded="false" />
-            <element signature="e#9145#9212#0" expanded="false" />
-            <element signature="e#9253#9388#0" expanded="false" />
-            <element signature="e#9398#9432#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="243">
+          <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/base.js">
+    <entry file="file://$PROJECT_DIR$/js/date.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6828358">
-          <caret line="70" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="464" selection-end-column="0" />
+        <state relative-caret-position="314">
+          <caret line="108" column="4" lean-forward="false" selection-start-line="108" selection-start-column="4" selection-end-line="108" selection-end-column="4" />
           <folding />
         </state>
       </provider>
