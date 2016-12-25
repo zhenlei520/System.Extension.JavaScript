@@ -1,7 +1,7 @@
 /**
  * Created by zhenlei on 2016/12/25.
  */
-(function(window,document,undefined){
+(function(window,document){
     /**
      * 默认表单输入校验命名规则
      * @type {string}
@@ -10,7 +10,7 @@
         validateCard = "validate-card",
         validateDec = "validate-dec";
     var InputValidate = function () {
-        var inpObj = new Object();
+        var inpObj = {};
         inpObj.each=function(obj,func){
             if(obj==obj){
                 for (var i=0;i<obj.length;i++){
@@ -44,7 +44,8 @@
             }
             /**
              * 添加键盘按下事件
-             * @param valInpObj 当前的文本框对象
+             * @param event 当前event
+             * @returns {boolean}
              */
             function checkType(event){
                 if (event.ctrlKey || event.shiftKey || event.altKey) {
@@ -52,10 +53,8 @@
                 }
                 event = window.event;
                 var k = event.keyCode;
-                if (!((k >= 96 && k <= 105) || (k >= 48 && k <= 57) || k === 46 || k === 8 || k === 20 || k === 37 || k === 39 || k === 9 )) {
-                    return false;
-                }
-                return true;
+                return (k >= 96 && k <= 105) || (k >= 48 && k <= 57) || k === 46 || k === 8 || k === 20 || k === 37 || k === 39 || k === 9;
+
             }
             /**
              * 辅助实现仅能输入数字
@@ -76,7 +75,9 @@
             }
             /**
              * 添加键盘按下事件
-             * @param event 当前按钮Key
+             * @param event 当前event
+             * @param valInpObj 当前文本框的对象
+             * @returns {boolean}
              */
             function checkType(event,valInpObj){
                 if (event.ctrlKey || event.shiftKey || event.altKey) {
@@ -87,10 +88,7 @@
                 if (!((k >= 96 && k <= 105) || (k >= 48 && k <= 57) || k === 8 || k === 46 || k === 37 || k === 39 || k === 110 || k === 190 || k === 9)) {
                     return false;
                 }
-                if(k===299||(valInpObj.value.indexOf('.') >= 0&&(k===110||k===190))){
-                    return false;
-                }
-                return true;
+                return !(k === 299 || (valInpObj.value.indexOf('.') >= 0 && (k === 110 || k === 190)));
             }
 
             /**
@@ -113,7 +111,9 @@
             }
             /**
              * 添加键盘按下事件
-             * @param valInpObj 当前的文本框对象
+             * @param event 当前event
+             * @param valInpObj 当前文本框的对象
+             * @returns {boolean}
              */
             function checkType(event,valInpObj){
                 event = window.event;
@@ -125,10 +125,8 @@
                 if(k===299||(valInpObj.value.length>=18&&k!=37&&k!=39&&k!==46&&k!=8)){
                     return false;
                 }
-                if ((valInpObj.value.indexOf('x') >= 0 || valInpObj.value.indexOf('X') >= 1) && k === 88) {
-                    return false;
-                }
-                return true;
+                return !((valInpObj.value.indexOf('x') >= 0 || valInpObj.value.indexOf('X') >= 1) && k === 88);
+
             }
 
             /**
@@ -152,17 +150,18 @@
      * @constructor
      */
     var Config=function(){
-        var inputConf=new Object();
+        var inputConf={};
         inputConf.config = function (rules) {
             if(rules==null)
                 return;
             validateNum = rules.num || validateNum;
             validateCard=rules.card||validateCard;
             validateDec=rules.dec||validateDec;
-        }
+        };
         return inputConf;
-    }
+    };
     window.validateInput=new Config();
+    validateInput=window.validateInput||new Config();
     window.onload=function(){
         InputValidate();
     };

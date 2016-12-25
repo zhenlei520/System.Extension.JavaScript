@@ -40,20 +40,16 @@ window.onload=pageLoad();
          * base64验证
          */
         regexBase64:/[^a-zA-Z0-9\/\+=]/i
-    }
+    };
     var Validate=function(){
-        var validate=new Object();
+        var validate={};
         /**
          * 检验是否为空
          * @param str 待验证的字符串
          * @returns {boolean}
          */
         validate.isNullOrEmpty= function (str) {
-            if (str == null || str === ''|| str === "") {
-                return true;
-            } else {
-                return false;
-            }
+            return !!(str == null || str === '' || str === "");
         };
         /**
          * 检验是否数字
@@ -61,18 +57,14 @@ window.onload=pageLoad();
          * @returns {boolean}
          */
         validate.isNum=function(str){
-            if(this.isNullOrEmpty(str))
-                return false;
-            return regexConfig.regexNum.test(str);
+            return validate.isNullOrEmpty(str) ? false : regexConfig.regexNum.test(str);
         };
         /**
          * 检验是否手机号
          * @param str
          */
         validate.isPhone=function(str){
-            if(this.isNullOrEmpty(str))
-                return false;
-            return regexConfig.regexPhone.test(str);
+            return validate.isNullOrEmpty(str) ? false : regexConfig.regexPhone.test(str);
         };
         /**
          * 检验是否邮箱
@@ -80,18 +72,14 @@ window.onload=pageLoad();
          * @returns {boolean}
          */
         validate.isEmail= function (str) {
-            if(this.isNullOrEmpty(str))
-                return false;
-            return regexConfig.regexEmail.test(str);
+            return validate.isNullOrEmpty(str) ? false : regexConfig.regexEmail.test(str);
         };
         /**
          * 检验是否小数
          * @param str 待验证的字符串
          */
         validate.isDecimal=function(str){
-            if(this.isNullOrEmpty(str))
-                return false;
-            return regexConfig.regexDecimal.test(str);
+            return validate.isNullOrEmpty(str) ? false : regexConfig.regexDecimal.test(str);
         };
         /**
          * 检验是否身份证
@@ -99,13 +87,11 @@ window.onload=pageLoad();
          * @returns {boolean}
          */
         validate.isCard= function (str) {
-            if(this.isNullOrEmpty(str))
-                return false;
-            return regexConfig.regexCard.test(str);
+            return validate.isNullOrEmpty(str) ? false : regexConfig.regexCard.test(str);
         };
         /**
          * 检验是否身份证(严格判断)
-         * @param card 待验证的字符串
+         * @param str 待验证的字符串
          */
         validate.isCardStrict=function(str){
             var card=str;//身份证
@@ -118,7 +104,7 @@ window.onload=pageLoad();
                 63: "青海", 64: "宁夏", 65: "新疆", 71: "台湾", 81: "香港", 82: "澳门", 91: "国外"
             };
             //是否为空
-            if (this.isNullOrEmpty(card)) {
+            if (validate.isNullOrEmpty(card)) {
                 return false;
             }
             //校验长度，类型
@@ -134,63 +120,24 @@ window.onload=pageLoad();
                 return false;
             }
             //检验位的检测
-            if (checkParity() === false) {
-                return false;
-            }
-            return true;
+            return checkParity() !== false;
+
             //检查号码是否符合规范，包括长度，类型
             function isCardNo() {
                 //身份证号码为15位或者18位，15位时全为数字，18位前17位为数字，最后一位是校验位，可能为数字或字符X
                 var reg = /(^\d{15}$)|(^\d{17}(\d|X)$)/;
-                if (reg.test(card) === false) {
-                    return false;
-                }
-                return true;
-            };
+                return reg.test(card) !== false;
+
+            }
             /**
              * 取身份证前两位,校验省份
              * @returns {boolean}
              */
             function checkProvince() {
                 var province = card.substr(0, 2);
-                if (cityArray[province] == undefined) {
-                    return false;
-                }
-                return true;
-            };
-            /**
-             * 检查生日是否正确
-             * @returns {*}
-             */
-            function checkBirthday() {
-                var len = card.length;
-                //身份证15位时，次序为省（3位）市（3位）年（2位）月（2位）日（2位）校验位（3位），皆为数字
-                var arrData;
-                var year;
-                var month;
-                var day;
-                var birthday;
-                if (len === 15) {
-                    var reFifteen = /^(\d{6})(\d{2})(\d{2})(\d{2})(\d{3})$/;
-                    arrData = card.match(reFifteen);
-                    year = arrData[2];
-                    month = arrData[3];
-                    day = arrData[4];
-                    birthday = new Date('19' + year + '/' + month + '/' + day);
-                    return checkBirthday('19' + year, month, day, birthday);
-                }
-                //身份证18位时，次序为省（3位）市（3位）年（4位）月（2位）日（2位）校验位（4位），校验位末尾可能为X
-                if (len === 18) {
-                    var reEighteen = /^(\d{6})(\d{4})(\d{2})(\d{2})(\d{3})([0-9]|X)$/;
-                    arrData = card.match(reEighteen);
-                    year = arrData[2];
-                    month = arrData[3];
-                    day = arrData[4];
-                    birthday = new Date(year + '/' + month + '/' + day);
-                    return checkBirthday(year, month, day, birthday);
-                }
-                return false;
-            };
+                return cityArray[province] != undefined;
+            }
+
             /**
              * 校验日期
              * @param year 年
@@ -206,13 +153,10 @@ window.onload=pageLoad();
                 if (birthday.getFullYear() == year && (birthday.getMonth() + 1) == month && birthday.getDate() == day) {
                     //判断年份的范围（3岁到100岁之间)
                     var time = nowYear - year;
-                    if (time >= 3 && time <= 100) {
-                        return true;
-                    }
-                    return false;
+                    return !!(time >= 3 && time <= 100);
                 }
                 return false;
-            };
+            }
             /**
              * 校验位的检测
              * @returns {boolean}
@@ -222,28 +166,26 @@ window.onload=pageLoad();
                 card = changeFifteenToEighteen();
                 var len = card.length;
                 if (len === 18) {
-                    var arrInt = new Array(7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2);
-                    var arrCh = new Array('1', '0', 'X', '9', '8', '7', '6', '5', '4', '3', '2');
+                    var arrInt = [7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2];
+                    var arrCh = ['1', '0', 'X', '9', '8', '7', '6', '5', '4', '3', '2'];
                     var cardTemp = 0, i;
                     for (i = 0; i < 17; i++) {
                         cardTemp += card.substr(i, 1) * arrInt[i];
                     }
                     var valNum = arrCh[cardTemp % 11];
-                    if (valNum === card.substr(17, 1)) {
-                        return true;
-                    }
-                    return false;
+                    return valNum === card.substr(17, 1);
+
                 }
                 return false;
-            };
+            }
             /**
              * 15位转18位身份证号
              * @returns {*}
              */
             function changeFifteenToEighteen() {
                 if (card.length === 15) {
-                    var arrInt = new Array(7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2);
-                    var arrCh = new Array('1', '0', 'X', '9', '8', '7', '6', '5', '4', '3', '2');
+                    var arrInt = [7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2];
+                    var arrCh = ['1', '0', 'X', '9', '8', '7', '6', '5', '4', '3', '2'];
                     var cardTemp = 0, i;
                     card = card.substr(0, 6) + '19' + card.substr(6, card.length - 6);
                     for (i = 0; i < 17; i++) {
@@ -253,43 +195,34 @@ window.onload=pageLoad();
                     return card;
                 }
                 return card;
-            };
+            }
         };
         /**
          * 检验是否ip
          * @param str 待验证的字符串
          */
         validate.isIp=function(str){
-            if(this.isNullOrEmpty(str))
-                return false;
-            return regexConfig.regexIp.test(str);
+            return !validate.isNullOrEmpty(str) ? regexConfig.regexIp.test(str) : false;
         };
         /**
          * 检验是否url
          * @param str 待验证的字符串
          */
         validate.isUrl=function(str){
-            if(this.isNullOrEmpty(str))
-                return false;
-            return regexConfig.regexUrl.test(str);
+            return !validate.isNullOrEmpty(str) ? regexConfig.regexUrl.test(str) : false;
         };
         /**
          * 检验是否Base64
          * @param str 待验证的字符串
          */
         validate.isBase64=function (str){
-            if(this.isNullOrEmpty(str))
-                return false;
-            return regexConfig.regexBase64.test(str);
+            return !validate.isNullOrEmpty(str) ? regexConfig.regexBase64.test(str) : false;
         };
         /**
          * 是否Ie浏览器
          */
         validate.isIE=function(){
-            if (!!window.ActiveXObject || "ActiveXObject" in window)
-                return true;
-            else
-                return false;
+            return !!(!!window.ActiveXObject || "ActiveXObject" in window);
         };
         /**
          * 判断是否方法
@@ -305,6 +238,7 @@ window.onload=pageLoad();
             }
         };
         return validate;
-    }
+    };
     window.validate=new Validate();
+    validate=window.validate||new Validate();
 })(window, document);
