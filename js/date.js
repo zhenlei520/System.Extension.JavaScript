@@ -1,7 +1,4 @@
 /**
- * Created by zhenlei on 2017/8/23.
- */
-/**
  * Created by zhenlei on 2016/12/25.
  * 参考https://github.com/jaywcjlove/date.js/issues
  */
